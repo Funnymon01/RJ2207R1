@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(is_valid_account("123abc_"));
+        console.log(is_valid_account("12345"));
+
+        function is_valid_account(str){
+            regexp = /^[_a-z0-9]{6,}$/;
+            if(regexp.test(str)){
+                return true;
+            }
+                return false;
+        }
+    </script>
+</body>
+</html>
